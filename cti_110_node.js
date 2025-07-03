@@ -19,7 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Route for the root URL
 router.get('/', function (req, res) {
   // Strictly by PDF: gradebook.html is in the same folder as cti_110_node.js
-  res.sendFile(path.join(__dirname, 'gradebook.html'));
+  res.sendFile(path.join(__dirname, 'DLokotaeva_gradebook.html'));
+
 });
 
 app.use("/", router);
